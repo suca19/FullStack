@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carlos Suca Portfolio">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#022">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Carlos Suca Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://carlossuca.com">
+    <meta property="og:image" content="drawers/favicon.jpeg">
+    <meta property="og:description" content="Carlos Suca Portfolio">
+   
+    <title>Carlos Suca - Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="drawers/favicon.jpeg">
+</head>
+<body>
+    <header>
+        <h1>Portfolio of Carlos Suca</h1>
+        <p>First time creating my <strong>portfolio :)</strong></p>
+    </header>
+
+    <dialog id="dialog">
+        <h2>Carlos Suca</h2>
+        <p>Carlos Suca is a web developer</p>
+        <button id="button_closed">Close</button>
+    </dialog>
+
+    <button id="button_open">open</button>
+    <script>
+       /* const dialog = document.getElementById('dialog');
+        const buttonOpen = document.getElementById('button-open');
+        const buttonClosed = document.getElementById('button-closed');
+
+        buttonOpen.addEventListener('click', () => {
+            dialog.showModal();
+        });
+
+        buttonClosed.addEventListener('click', () => {
+            dialog.close();
+        });*/
+
+        window.button_open.addEventListener('click', () => {
+            window.dialog.showModal();
+        });
+        window.button_closed.addEventListener('click', () => {
+            window.dialog.close();
+        });
+    </script>
+    <main>
+        
+        <figure>
+            <img 
+                width="300"
+                height="300"
+                title="The cat" 
+                src="drawers/cat.jpeg" 
+                alt="A cat"
+            >
+            <figcaption>A picture of a cat</figcaption>
+        </figure>
+
+        <details closed>
+            <summary>Education</summary>
+            <ul>
+                <li>Dorset College</li>
+                <li>Web Development</li>
+                <li>2019-2020</li>
+            </ul>
+        </details>
+
+        <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <div>
+                <datalist id="skills">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="JavaScript"></option>
+                    <option value="React"></option>
+                    <option value="Node.js"></option>
+                    <option value="Express"></option>
+                    <option value="MongoDB"></option>
+                    <option value="Python"></option>
+                </datalist>
+            </div>
+            <div>
+                <input type="text" list="skills" placeholder="Enter a skill">
+            </div>
+        </section>
+    </main>
+
+    <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+   <div> <audio controls src="drawers/town-10169.mp3" ></audio> </div>
+    <video autoplay loop muted src="drawers/sea.mp4" width="400" height="200"></video>
+
+    <section>
+
+        <article>
+            <header>
+                <h2>More Cats</h2>
+                <p>Some more cats</p>
+                <img width="100%" height="100%" loading="lazy"
+                src="drawers/catito.jpeg" 
+                alt="a cat laying"
+                >
+            </header>
+        </article>
+        <article>
+            <header>
+                <h2>Projects</h2>
+                <p>Some of the projects I have worked on</p>
+            </header>
+            <ul>
+                <li>
+                    <h4>Calculator</h4>
+                    <img src="drawers/carlculator.png" alt="image of a calculator" width="100" height="100" />  
+                    <p>it is an application that calculates ordinary numbers</p>
+                </li>
+                <li>
+                    <h4>StockMaster</h4>
+                    <p>Project 2 description</p>
+                </li>
+                <li>
+                    <h4>Project 3</h4>
+                    <p>Project 3 description</p>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h2>Contact Form</h2>
+
+        <form method="post" action="/"></form>
+    
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:
+            <input type="text" 
+            id="name" name="name" 
+            placeholder="Carlos Suca" required>
+            <br>
+            </label>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="carlos.enrique.suca@gmal.com " required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Message</legend>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Date</legend>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </fieldset>
+        <button type="submit">Send</button>
+    </section>
+
+    <iframe style = "width:100%; aspect-ratio:16/9;" src="https://www.youtube.com/embed/3nYLTiY5skU?si=ljtXBfxrVVjqx3Hu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <footer>
+        <p>Carlos Suca</p>
+        <small>Created on 29-01-25</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.paragraph {
+  font-size: 1.5em;
+  color: #cd0303;
+}
+.button {
+  background-color: #723fe1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2257d1;
+  text-decoration-color: aquamarine;
+}
+
+.my-button {
+    background-color: #4CAF50;  
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.my-button:hover {
+    background-color: #45a049;  
+}
