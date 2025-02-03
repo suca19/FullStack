@@ -1,0 +1,48 @@
+.text {
+    color: red;
+}
+p {
+    color: aqua;
+    color: oklch(70% 0.148 238.24);
+} 
+.container {
+    background: hsl(0, 92%, 39%);
+    height: 50 px;
+    width: 50 px;
+    border: 10px solid hsl(0, 92%, 39%);
+    padding: 5px 5px 5px 5px;
+    margin: 10px;
+    box-sizing: content-box;
+}
+.parent {
+    border: 5px solid hsl(0, 0%, 0%);
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    position: relative;
+}
+.my_div {
+    background: blueviolet;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+}
+.padre{
+    display: flex;
+    flex-flow: nowrap;
+}
+.boxy {
+    border: 1px solid;
+    opacity: .9;
+    background: greenyellow;
+    width: 100px;
+    height: 100px;
+}
+.boxy:first-child{
+    background: red;
+}
+.boxy:last-child{
+    background: blue;
+}
