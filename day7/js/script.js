@@ -30,3 +30,20 @@ const persona = {
 
 console.log(persona.name);
 console.log(persona.links[1]);
+
+//
+const field = 'twitter';
+console.log(persona[field]);
+
+//Functions
+const sum = (number1, number2) => {
+console.log(number1);
+console.log(number2);
+return number1 + number2;
+}
+
+console.log(sum(6,9));
+function rest (firstNumber, secondNUmber) {
+    return firstNumber - secondNUmber;
+}
+console.log(rest(10, 3));
